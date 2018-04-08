@@ -79,11 +79,6 @@ p {
 .navbar-default .navbar-toggle {
   border-color: transparent;
 }
-.da-slide {
-  height: 550px;
-  overflow: hidden;
-  background: url(../img/main-bg.jpg) repeat;
-}
 /* core */
 .core {
   padding-top: 20px;

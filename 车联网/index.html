@@ -7,6 +7,7 @@
   <title>车联网</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/parallax-slider.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -35,8 +36,53 @@
       </div>
     </nav>
   </header>
-  <div class="da-slide da-slide-fromright da-slide-current">
-
+  <div id="da-slider" class="da-slider">
+	<div class="da-slide da-slide-fromleft da-slide-current">
+	  <div class="container">     
+		<div class="row">
+		  <div class="col-md-12">
+		    <h2>智慧能源 品质生活</h2>
+		    <p>氢生活 触碰未来</p>
+		    <a href="service.html" class="btn btn-info btn-lg da-link">查看更多</a>
+		    <div class="da-img">
+			  <img src="img/b1.png">
+		    </div>
+		  </div>
+	    </div>
+	  </div>
+    </div>
+    <div class="da-slide">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>安全稳定 开放兼容</h2>
+            <p>氢生活 触碰未来</p>
+            <a href="service.html" class="btn btn-info btn-lg da-link">查看更多</a>
+			<div class="da-img">
+              <img src="img/b2.png">
+			</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="da-slide">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>深度挖掘 云网互联</h2>
+            <p>氢生活 触碰未来</p>
+            <a href="service.html" class="btn btn-info btn-lg da-link">查看更多</a>
+            <div class="da-img">
+              <img src="img/b3.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="da-arrows">
+      <span class="da-arrows-prev"></span>
+      <span class="da-arrows-next"></span>
+    </div>
   </div>
   <div class="core">
     <div class="container">
@@ -170,7 +216,17 @@
   </footer>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/modernizr.custom.28468.js"></script>
+  <script src="js/jquery.cslider.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/chelianwang.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('#da-slider').cslider({
+        autoplay    : true,
+        bgincrement : 100
+      });
+    });
+  </script>
 </body>
 </html>
